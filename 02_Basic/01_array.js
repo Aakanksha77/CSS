@@ -29,7 +29,7 @@ console.log(myArray);
 myArray.shift(); // to remove the starting element of the array
 console.log(myArray);
 
-console.log(myArray.includes(10));
+console.log(myArray.includes(10)); 
 console.log(myArray.includes(2));
 console.log(myArray.indexOf(4));
 
