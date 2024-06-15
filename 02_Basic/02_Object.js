@@ -38,3 +38,45 @@ userInfo.greetingtwo = function () {
 }
 
 console.log(userInfo.greetingtwo()) // greetinhtwo is methos that's why () are imp to add.
+
+
+const user = {}
+user.id = "user12"
+user.name = "Aakanksha"
+user.LoggedIn = "False"
+
+const regularuser = {
+    email : "user@gmail.com",
+    username : {
+        usernamefull : {
+            f_name : "Aakanksha",
+            M_name : "Moti",
+            S_name : "Rajbhar"
+        }
+    },
+    userage : "22"
+}
+
+console.log(regularuser.username.usernamefull);
+
+console.log(regularuser);
+console.log(Object.keys(regularuser));
+
+// Object decision for Api
+
+// de-structuring
+
+const collage = {
+    name : "Patkar",
+    fee : "350000",
+    Subject : "BSc"
+}
+
+// how to use the value in the clear way
+
+const {Subject} = collage;
+console.log(Subject);
+
+// other way
+const {Subject : sub} = collage;
+console.log(sub);
