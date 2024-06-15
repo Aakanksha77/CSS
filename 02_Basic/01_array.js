@@ -4,7 +4,7 @@ const nameSuperHero = ["Wonder-Women","IronMan","Halk","Loki","Dr.Strange"]
 const indSuperHero = new Array("Hanu-man","SakthiMan","G-One","krish"); // Decralde as Object
 
 console.log(myArray);
-console.log(myArray[3])
+console.log(myArray[3]);
 console.log(nameSuperHero);
 console.log(nameSuperHero[2])
 console.log(indSuperHero);
@@ -17,16 +17,16 @@ console.log(typeof newArray);
 
 // Method
 
-myArray.push(7);
+myArray.push(7); // add 7 in last
+console.log(myArray); // remove the last element(i.e 7)from array
+
+myArray.pop(); // remove the last element(i.e 7)from array
 console.log(myArray);
 
-myArray.pop();
+myArray.unshift(0) // to add at stating f the array
 console.log(myArray);
 
-myArray.unshift(0)
-console.log(myArray);
-
-myArray.shift();
+myArray.shift(); // to remove the starting element of the array
 console.log(myArray);
 
 console.log(myArray.includes(10));
