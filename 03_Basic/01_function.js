@@ -1,4 +1,4 @@
-function myfunction () {
+function myfunction () {   
     console.log("hello");
 }
 
@@ -9,3 +9,4 @@ myfunction(); // this is the execution of the function
 // "myfunction" is a name of function with ()
 // By using {} we action the fuction
 // to call the function we call the name of the function with ().
+
