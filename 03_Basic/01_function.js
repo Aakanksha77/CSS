@@ -14,9 +14,16 @@ myfunction(); // this is the execution of the function
 
 
 function addTwoNumber (number1, number2){
-    return  number1+ number2;  
+    return  number1+ number2;
+    console.log("Aakanksha");  
 }
 
 let sum = (addTwoNumber(3,4));
 
 console.log("Result: ",sum);
+
+function loginMessage(username){
+    return `${username} Welcome to helping Desk`
+}
+
+console.log(loginMessage("Aakanksha"));
