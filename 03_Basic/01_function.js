@@ -67,3 +67,22 @@ userBill({
     userinfo : "Mansi",
     prices : 499
 })
+
+// Array in Function
+//  1 way
+
+const listOfArray = [200, 300, 400, 500, 6000];
+
+function returnArray(getArray) {
+    return getArray;
+}
+
+console.log(returnArray(listOfArray));
+
+// 2 way
+
+function listOfPrice(getCalculated) {
+    return getCalculated
+}
+
+console.log(listOfPrice([100, 200, 300, 400]));
