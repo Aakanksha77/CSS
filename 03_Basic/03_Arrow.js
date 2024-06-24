@@ -1,6 +1,6 @@
 
 const user = {
-    username : "Aashi",
+    username : "Aakanksha",
     price : 399,
 
     welcomeMsg : function (params) {
@@ -8,6 +8,14 @@ const user = {
     }
 }
 
-console.log(user);
-user.welcomeMsg(); // when the function is inside the object this how it is called.
+// user.welcomeMsg(); // when the function is inside the object this how it is called.
+// user.username = "Rashami"
+// user.welcomeMsg();
 
+
+function info(){
+    let username = "Aakanksha"
+    console.log(this.username)
+}
+
+info();
