@@ -12,7 +12,6 @@ const user = {
 // user.username = "Rashami"
 // user.welcomeMsg();
 
-
 function info(){
     let username = "Aakanksha"
     console.log(this.username)
