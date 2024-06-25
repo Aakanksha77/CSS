@@ -17,4 +17,35 @@ function info(){
     console.log(this.username)
 }
 
-info();
+// info();
+
+
+const infoIntern =  () => {
+    let username = "Rashmi"
+    console.log(this.username)
+}
+
+// infoIntern()
+
+
+// ++++++++++++++++ Arrow Function ++++++++++++++++++++
+
+// () => {}     this is representation of Arrow function
+
+// One way 
+const arrowOne = (num1 , num2) => {
+    return num1+ num2
+}
+
+console.log(arrowOne(2,3))
+
+// Other way
+const addTwo = (num1 , num2) => num1 + num2
+console.log(addTwo(5,6))
+
+// 3rd way
+const addTwo1 = (num1, num2) =>(num1+num2)
+console.log(addTwo1(1,3));
+
+const info1 = () => ({username : "Aakanksha"})
+console.log(info1());
