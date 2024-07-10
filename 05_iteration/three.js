@@ -40,5 +40,5 @@ let myObject = {
 }
 
 for (const obj of myObject) {
-    console.log(obj);
+    console.log(obj);  //this is not iterable for solution see four.js file 
 }
