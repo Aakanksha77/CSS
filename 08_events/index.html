@@ -20,7 +20,7 @@
             <li><img src="./assetr/pexels-ladyhelga-25003963.jpg" alt="pexels" id="pexels"></li>
             <li><img src="./assetr/right.jpg" alt="right" id="right"></li>
             <li><img src="./assetr/right1.jpg" alt="right1" id="right1"></li>
-            <li><a href="http://google.com">Google</a></li>
+            <li><a href="http://google.com" id="google">Google</a></li>
         </ul>
     </div>
 
@@ -29,8 +29,8 @@
         //     alert("This is moon")
         // }
 
-        document.getElementById('moon').addEventListener('click' , function (){
-            alert('This is mooooonnnnn')
+        document.getElementById('images').addEventListener('click' , function (){
+            alert('Click on ul')
         }, false)
 
         // Types , timeStamp ,defaultPrevented 
@@ -39,9 +39,17 @@
         // altKey, ctrlKey, shift, keyCode
 
         // EventPrapogation
-        
-        
 
+        document.getElementById('pexels').addEventListener('click' , function (e){
+            alert('Moon clicked')
+            e.stopImmediatePropagation();
+        }, false)
+
+        document.getElementById('google').addEventListener('click', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            alert("Google clicked")
+        })
 
     </script>
 </body>
