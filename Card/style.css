@@ -1,30 +1,67 @@
-const name = "Aakanksha";
-const surname = "Rajbhar";
- console.log(`${name} ${surname}`); // ${} aka string-interpolation
+*{
+    margin: 0%;
+    padding: 0%;
+}
 
- const nameHero = "  SpiderMan  ";
- const gameName = new String("  SpiderMan  ")
- console.log(`${gameName}`);
+html , body {
+    width: 100%;
+    height: 100%;
+}
 
- console.log(typeof nameHero);
- console.log(typeof gameName);
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- console.log(nameHero == gameName);
- console.log(nameHero === gameName);
+.Card {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); */
+    width: 250px;
+    height: 350px;
+    border: 1px solid black; 
+    border-radius: 20px;
+    overflow: hidden;
+}
 
-//  Methods
-console.log(gameName[0]); // Expected output:  blank
-console.log(gameName.charAt(5)); // Expected output: d
-console.log(gameName.indexOf('r')); // Expected output: 7
-console.log(gameName.trimStart());// Expected output: SpiderMan
-console.log(gameName.trimEnd());// Expected output:  SpiderMan   
-console.log(gameName.toUpperCase()); // Expected output:  SPIDERMAN
-console.log(gameName.toLowerCase());// Expected output:  spiderman
-console.log(gameName.toLocaleUpperCase('TR'));// Expected output:  SPİDERMAN
-console.log(gameName.toLocaleLowerCase());// Expected output:  spiderman
-console.log(gameName.split("e"));// Expected output:[ '  Spid', 'rMan  ' ]
-console.log(gameName.replace('Spider','Iron'));// Expected output: IronMan
-console.log(`My favourate game is ${gameName.repeat(3)}`);// Expected output:My favourate game is   SpiderMan    SpiderMan    SpiderMan
-console.log(gameName.match(name));// Expected output:null
-console.log(gameName.match(nameHero));
-                                                            
+.Card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Card1{
+    z-index: 4;
+}
+
+#Card2{
+    z-index: 3;
+    rotate: 7deg;
+}
+
+#Card3{
+    z-index: 2;
+    rotate: 14deg;
+} 
+
+#Card4{
+    z-index: 1;
+    rotate: 21deg;
+}
+
+#Card2:hover{
+   z-index: 4;
+}
+
+#Card3:hover{
+   z-index: 4;
+}
+
+#Card4:hover{
+   z-index: 4;
+}
